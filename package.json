@@ -1,0 +1,31 @@
+{
+  "name": "vue-sharer",
+  "version": "0.1.0",
+  "description": "The Vue directive that bind to Sharer.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "dependencies": {
+    "sharer.npm.js": "^0.0.10"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "karma": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sinon": "^1.0.5",
+    "karma-tap": "^2.1.4",
+    "karma-tap-pretty-reporter": "^1.1.0",
+    "karma-webpack": "^1.8.0",
+    "object-assign": "^4.1.0",
+    "sinon": "^1.17.5",
+    "tape": "^4.6.0",
+    "webpack": "^1.13.1"
+  },
+  "author": {
+    "name": "Pine Mizune",
+    "email": "pinemz@gmail.com",
+    "url": "https://github.com/pine"
+  },
+  "license": "MIT"
+}
