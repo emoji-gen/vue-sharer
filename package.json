@@ -27,5 +27,13 @@
     "email": "pinemz@gmail.com",
     "url": "https://github.com/pine"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emoji-gen/vue-sharer"
+  },
+  "bugs": {
+    "url": "https://github.com/emoji-gen/vue-sharer/issues"
+  },
+  "homepage": "https://github.com/emoji-gen/vue-sharer",
   "license": "MIT"
 }
