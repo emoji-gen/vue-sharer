@@ -4,7 +4,7 @@
   "description": "The Vue directive that bind to Sharer.js",
   "main": "index.js",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start --single-run"
   },
   "dependencies": {
     "sharer.npm.js": "^0.0.10"
