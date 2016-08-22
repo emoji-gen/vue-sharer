@@ -1,7 +1,7 @@
-const Sharer = require('sharer.npm.js')
+var Sharer = require('sharer.npm.js')
 
 function share(e) {
-  const sharer = new Sharer(e.target)
+  var sharer = new Sharer(e.target)
   sharer.share()
 }
 
