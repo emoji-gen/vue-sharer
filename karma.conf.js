@@ -78,11 +78,7 @@ module.exports = function(config) {
       noInfo: true
     },
 
-    reporters: ['tap-pretty'],
-    tapReporter: {
-      prettifier: 'faucet',
-      separator: true
-    },
+    reporters: ['dots'],
 
     port: 9876,
     colors: true,
