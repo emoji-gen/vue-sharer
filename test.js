@@ -7,7 +7,7 @@ function make() {
   return assign({ el: wrapper.querySelector('button') }, require('./index'))
 }
 
-test('bind', function (t) {
+test('bind', { timeout: 5000 }, function (t) {
   var sandbox = sinon.sandbox.create()
   var spy     = sandbox.spy(window, 'open')
   var sharer  = make()
@@ -23,7 +23,7 @@ test('bind', function (t) {
   }, 1000)
 })
 
-test('unbind', function (t) {
+test('unbind', { timeout: 5000 }, function (t) {
   var sandbox = sinon.sandbox.create()
   var spy     = sandbox.spy(window, 'open')
   var sharer  = make()
