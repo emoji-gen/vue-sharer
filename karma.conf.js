@@ -50,10 +50,14 @@ module.exports = function(config) {
 
     browsers: browsers,
     customLaunchers: customLaunchers,
+
     sauceLabs: {
       public: 'public',
     },
     concurrency: isTravis ? 1 : Infinity,
+    browserDisconnectTimeout: 5000,
+    browserNoActivityTimeout: 5000,
+    browserDisconnectTolerance: 10,
 
     files: [
       'test.js'
