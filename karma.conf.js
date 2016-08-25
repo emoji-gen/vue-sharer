@@ -46,7 +46,7 @@ if (isTravis && isFirstJob) {
 module.exports = function(config) {
   config.set({
     basePath: '',
-    frameworks: ['tap', 'sinon'],
+    frameworks: ['mocha', 'chai', 'sinon'],
 
     browsers: browsers,
     customLaunchers: customLaunchers,
@@ -82,20 +82,11 @@ module.exports = function(config) {
       noInfo: true
     },
 
-    reporters: ['tap'],
-    tapReporter: {
-      disableStdout: false,
-    },
+    reporters: ['mocha'],
 
     port: 9876,
     colors: true,
     logLevel: config.LOG_LOG,
-
-    browserConsoleLogOptions: {
-      level: 'error',
-      format: '%b %T: %m',
-      terminal: true,
-    },
 
     autoWatch: true,
   })

@@ -1,4 +1,4 @@
-var test   = require('tape')
+var expect = require('chai').expect
 var assign = require('object-assign')
 
 function make() {
@@ -7,35 +7,39 @@ function make() {
   return assign({ el: wrapper.querySelector('button') }, require('./index'))
 }
 
-test('bind', { timeout: 1000 }, function (t) {
-  var sandbox = sinon.sandbox.create()
-  var spy     = sandbox.spy(window, 'open')
-  var sharer  = make()
+describe('index', function () {
+  var sandbox
+  var spy
+  var sharer
 
-  sharer.bind()
-  sharer.el.click()
+  beforeEach(function () {
+    sandbox = sinon.sandbox.create()
+    spy     = sandbox.spy(window, 'open')
+    sharer  = make()
+  })
 
-  setTimeout(function () {
-    t.ok(spy.calledOnce)
-
+  afterEach(function () {
     sandbox.restore()
-    t.end()
-  }, 100)
-})
+  })
 
-test('unbind', { timeout: 1000 }, function (t) {
-  var sandbox = sinon.sandbox.create()
-  var spy     = sandbox.spy(window, 'open')
-  var sharer  = make()
+  it('bind', function (cb) {
+    sharer.bind()
+    sharer.el.click()
 
-  sharer.bind()
-  sharer.unbind()
-  sharer.el.click()
+    setTimeout(function () {
+      expect(spy.calledOnce).to.be.ok
+      cb()
+    }, 100)
+  })
 
-  setTimeout(function () {
-    t.notOk(spy.called)
+  it('unbind', function (cb) {
+    sharer.bind()
+    sharer.unbind()
+    sharer.el.click()
 
-    sandbox.restore()
-    t.end()
-  }, 100)
+    setTimeout(function () {
+      expect(spy.called).to.not.be.ok
+      cb()
+    }, 100)
+  })
 })
