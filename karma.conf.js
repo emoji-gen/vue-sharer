@@ -54,7 +54,7 @@ module.exports = function(config) {
     sauceLabs: {
       public: 'public',
     },
-    concurrency: isTravis ? 1 : Infinity,
+    concurrency: isTravis ? 5 : Infinity,
     browserDisconnectTimeout: 10000,
     browserNoActivityTimeout: 10000,
     browserDisconnectTolerance: 16,
