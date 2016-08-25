@@ -55,9 +55,9 @@ module.exports = function(config) {
       public: 'public',
     },
     concurrency: isTravis ? 1 : Infinity,
-    browserDisconnectTimeout: 5000,
-    browserNoActivityTimeout: 5000,
-    browserDisconnectTolerance: 10,
+    browserDisconnectTimeout: 10000,
+    browserNoActivityTimeout: 10000,
+    browserDisconnectTolerance: 16,
 
     files: [
       'test.js'
@@ -82,7 +82,10 @@ module.exports = function(config) {
       noInfo: true
     },
 
-    reporters: ['dots'],
+    reporters: ['tap'],
+    tapReporter: {
+      disableStdout: false,
+    },
 
     port: 9876,
     colors: true,

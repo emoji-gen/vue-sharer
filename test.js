@@ -7,7 +7,7 @@ function make() {
   return assign({ el: wrapper.querySelector('button') }, require('./index'))
 }
 
-test('bind', { timeout: 5000 }, function (t) {
+test('bind', { timeout: 1000 }, function (t) {
   var sandbox = sinon.sandbox.create()
   var spy     = sandbox.spy(window, 'open')
   var sharer  = make()
@@ -20,10 +20,10 @@ test('bind', { timeout: 5000 }, function (t) {
 
     sandbox.restore()
     t.end()
-  }, 1000)
+  }, 100)
 })
 
-test('unbind', { timeout: 5000 }, function (t) {
+test('unbind', { timeout: 1000 }, function (t) {
   var sandbox = sinon.sandbox.create()
   var spy     = sandbox.spy(window, 'open')
   var sharer  = make()
@@ -37,5 +37,5 @@ test('unbind', { timeout: 5000 }, function (t) {
 
     sandbox.restore()
     t.end()
-  }, 1000)
+  }, 100)
 })
