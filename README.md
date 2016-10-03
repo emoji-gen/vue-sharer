@@ -32,5 +32,15 @@ new Vue({
 </button>
 ```
 
+## Example
+First, try to build example projects.
+
+```
+$ git clone https://github.com/emoji-gen/vue-sharer.git
+$ cd vue-sharer
+$ npm install
+$ npm run example
+```
+
 ## License
 MIT License
