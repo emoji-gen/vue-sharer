@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Example for vue-sharer",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Pine Mizune",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^1.0.28"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}

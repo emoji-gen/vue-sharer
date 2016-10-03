@@ -8,6 +8,10 @@ vue-sharer
 
 The Vue directive that bind to Sharer.js
 
+## Requirements
+
+- Vue 1.0 or 2.0
+
 ## Getting Started
 
 ```
@@ -27,10 +31,6 @@ new Vue({
   Share on Twitter
 </button>
 ```
-
-## Todo
-
-- [ ] Support Vue 2.0
 
 ## License
 MIT License

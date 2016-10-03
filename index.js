@@ -6,11 +6,13 @@ function share(e) {
 }
 
 module.exports = {
-  bind: function () {
-    this.el.addEventListener('click', share, false)
+  bind: function (el) {
+    el = this.el || el
+    el.addEventListener('click', share, false)
   },
 
-  unbind: function () {
-    this.el.removeEventListener('click', share, false)
+  unbind: function (el) {
+    el = this.el || el
+    el.removeEventListener('click', share, false)
   },
 }
