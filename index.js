@@ -7,12 +7,12 @@ function share(e) {
 
 module.exports = {
   bind: function (el) {
-    el = this.el || el
+    el = el || this.el
     el.addEventListener('click', share, false)
   },
 
   unbind: function (el) {
-    el = this.el || el
+    el = el || this.el
     el.removeEventListener('click', share, false)
   },
 }
