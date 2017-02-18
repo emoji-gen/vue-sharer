@@ -1,3 +1,5 @@
+'use strict'
+
 var Sharer = require('sharer.npm.js')
 
 function share(e) {
