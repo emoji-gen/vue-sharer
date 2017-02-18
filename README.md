@@ -43,4 +43,4 @@ $ npm run example
 ```
 
 ## License
-MIT License
+MIT &copy; Emoji Generator
