@@ -10,7 +10,7 @@ The Vue directive that bind to [Sharer.js](https://github.com/ellisonleao/sharer
 
 ## Requirements
 
-- Vue 1.0 or 2.0
+- Vue 1.x or 2.x
 
 ## Getting Started
 
