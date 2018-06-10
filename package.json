@@ -1,6 +1,6 @@
 {
   "name": "vue-sharer",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "The Vue directive that bind to Sharer.js",
   "main": "index.js",
   "scripts": {
