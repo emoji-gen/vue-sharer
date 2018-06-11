@@ -23,7 +23,7 @@ describe('index', function () {
   var spy
 
   beforeEach(function () {
-    sandbox = sinon.sandbox.create()
+    sandbox = sinon.createSandbox()
     spy     = sandbox.spy(window, 'open')
   })
 
