@@ -14,11 +14,19 @@ The Vue directive that bind to [Sharer.js](https://github.com/ellisonleao/sharer
 
 - Vue 1.x or 2.x
 
-## Getting Started
+## Installing
+
+```
+$ yarn add vue-sharer
+```
+
+or
 
 ```
 $ npm install vue-sharer --save
 ```
+
+## Getting Started
 
 ```js
 new Vue({
