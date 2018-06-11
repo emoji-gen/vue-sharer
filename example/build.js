@@ -1,7 +1,7 @@
 set('-ev')
 cd(__dirname)
 
-pushd('./vue')
+pushd('./vue1')
 exec('npm install')
 exec('npm run build')
 popd()
