@@ -7,6 +7,8 @@ vue-sharer
 [![devDependencies Status](https://david-dm.org/emoji-gen/vue-sharer/dev-status.svg)](https://david-dm.org/emoji-gen/vue-sharer?type=dev)
 
 The Vue directive that bind to [Sharer.js](https://github.com/ellisonleao/sharer.js/)
+<br>
+<br>
 
 ## Requirements
 
