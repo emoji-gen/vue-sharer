@@ -29,10 +29,12 @@ $ npm install vue-sharer --save
 ## Getting Started
 
 ```js
+import VueSharer from 'vue-sharer'
+
 new Vue({
   directives: {
-    sharer: require('vue-sharer')
-  }
+    sharer: VueSharer,
+  },
 })
 ```
 
