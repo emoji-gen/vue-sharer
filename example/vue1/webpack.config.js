@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'development',
   context: __dirname,
   entry: './index.js',
   output: {
