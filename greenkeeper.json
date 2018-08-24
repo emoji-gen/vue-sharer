@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "example/vue1/package.json",
+        "example/vue2/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
