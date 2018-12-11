@@ -9,7 +9,7 @@
   "author": "Pine Mizune",
   "license": "MIT",
   "dependencies": {
-    "vue": "^1.0.28"
+    "vue": "^2.5.21"
   },
   "devDependencies": {
     "webpack": "^4.12.0",
