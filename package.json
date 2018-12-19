@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start --single-run",
-    "example": "shjs example/build.js"
+    "example": "run example"
   },
   "dependencies": {
     "sharer.npm.js": "^0.0.10"
@@ -22,7 +22,7 @@
     "karma-webpack": ">=4.0.0-rc.3 <5.0.0",
     "mocha": "^5.2.0",
     "object-assign": "^4.1.0",
-    "shelljs": "^0.8.2",
+    "runjs": "^4.3.2",
     "sinon": "^6.0.0",
     "webpack": "^4.26.1"
   },
