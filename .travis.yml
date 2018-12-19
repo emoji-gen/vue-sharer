@@ -5,8 +5,8 @@ node_js:
   - stable
 
 script:
-  - npm test
-  - npm run example
+  - travis_retry npm test
+  - travis_retry npm run example
 
 env:
   global:
