@@ -8,7 +8,7 @@
     "example": "run example"
   },
   "dependencies": {
-    "sharer.npm.js": "^0.0.10"
+    "sharer.js": "^0.3.5"
   },
   "devDependencies": {
     "chai": "^4.1.2",

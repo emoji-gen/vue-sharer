@@ -1,6 +1,6 @@
 'use strict'
 
-var Sharer = require('sharer.npm.js')
+var Sharer = require('sharer.js')
 
 function share(e) {
   var sharer = new Sharer(e.target)
