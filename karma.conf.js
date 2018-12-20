@@ -35,12 +35,12 @@ const customLaunchers = {
   },
 }
 
-const isTravis   = process.env.TRAVIS === 'true'
+const isTravis = process.env.TRAVIS === 'true'
 const isFirstJob = /\.1$/.test(process.env.TRAVIS_JOB_NUMBER)
 
-const browsers = ['PhantomJS']
+const browsers = [ isTravis ? 'ChromiumHeadless' : 'ChromeHeadless' ]
 if (isTravis && isFirstJob) {
-  Array.prototype.push.apply(browsers, Object.keys(customLaunchers))
+  browsers.push(...Object.keys(customLaunchers))
 }
 
 module.exports = function(config) {
