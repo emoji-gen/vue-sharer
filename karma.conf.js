@@ -38,7 +38,7 @@ const customLaunchers = {
 const isTravis = process.env.TRAVIS === 'true'
 const isFirstJob = /\.1$/.test(process.env.TRAVIS_JOB_NUMBER)
 
-const browsers = [ isTravis ? 'ChromiumHeadless' : 'ChromeHeadless' ]
+const browsers = [ 'ChromeHeadless' ]
 if (isTravis && isFirstJob) {
   browsers.push(...Object.keys(customLaunchers))
 }
