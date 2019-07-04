@@ -6,6 +6,7 @@ vue-sharer
 [![dependencies Status](https://david-dm.org/emoji-gen/vue-sharer/status.svg)](https://david-dm.org/emoji-gen/vue-sharer)
 [![devDependencies Status](https://david-dm.org/emoji-gen/vue-sharer/dev-status.svg)](https://david-dm.org/emoji-gen/vue-sharer?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/emoji-gen/vue-sharer.svg)](https://greenkeeper.io/)
+![License](https://img.shields.io/github/license/emoji-gen/browser-extension.svg)
 [![Beerpay](https://beerpay.io/emoji-gen/vue-sharer/badge.svg?style=flat)](https://beerpay.io/emoji-gen/vue-sharer)
 
 The Vue directive that bind to [Sharer.js](https://github.com/ellisonleao/sharer.js/)
