@@ -23,7 +23,7 @@
     "object-assign": "^4.1.0",
     "runjs": "^4.3.2",
     "sinon": "^8.0.0",
-    "webpack": "^4.29.3"
+    "webpack": "^4.43.0"
   },
   "author": {
     "name": "Pine Mizune",
