@@ -19,7 +19,7 @@
     "karma-mocha-reporter": "^2.1.0",
     "karma-sinon": "^1.0.5",
     "karma-webpack": ">=4.0.0-rc.3 <5.0.0",
-    "mocha": "^6.0.0",
+    "mocha": "^7.1.2",
     "object-assign": "^4.1.0",
     "runjs": "^4.3.2",
     "sinon": "^8.0.0",
